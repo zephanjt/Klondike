@@ -54,7 +54,30 @@ public class GameBoard implements Drawable, Updateable {
 	public void justClicked(MouseEvent me) {
 		Point p = me.getPoint();
 		System.out.println("You just clicked "+p);
+		int clickOne = 0;
+	protected void clickedAt(MouseEvent me) {
+		if(Card.value == 1){   //checks if card is ace
+			//put card in first available slot in upper right corner
+		}
+		else{
+			clickOne++;
+			Card.getLocation;
+		}
+		grid.justClicked(me);
+			
+// 		}
 
+// 		if(clickOne == 1){
+// 			firstClick(x,y);
+// 			return;
+// 		}
+		
+		Location loc = convert(me);
+		
+	}
+//check if its first click
+//prviate int 1 and 2 rest to one for third clicvk
+//convert me(mouse event) to location
 
 	}
 
